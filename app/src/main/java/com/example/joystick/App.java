@@ -73,10 +73,14 @@ public class App extends SurfaceView implements SurfaceHolder.Callback
 
     }
 
-    public void calcutale() {
+    public void calculate() {
         int dx = image.x - 542;
         int dy = image.y - 1140;
         angle = (int) (Math.atan2(dy, dx)*180.0/Math.PI)*(-1);
+        if(angle<0)
+        {
+            angle+=360;
+        }
 
     }
 

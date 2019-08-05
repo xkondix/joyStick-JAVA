@@ -36,7 +36,7 @@ public class MainTherad extends Thread
                 synchronized(mSH)
                 {
                     this.app.draw(canvas);
-                    this.app.calcutale();
+                    this.app.calculate();
 
                 }
             }
